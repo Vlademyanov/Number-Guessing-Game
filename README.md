@@ -26,9 +26,44 @@ To run the game, you need a C++ compiler. Follow these steps:
 2. Navigate to the project directory:
    ```sh
    cd number-guessing-game
+3. Install the nlohmann/json library:
+
+- If you are using vcpkg (C++ package manager), you can install the library with the following command:
+
+   ```sh
+   vcpkg install nlohmann-json
+   
+- If you prefer to download the library manually, you can get it from the nlohmann/json GitHub repository. Place the json.hpp file in an include directory within your project.
+
+4. Compile the code:
+
+- If using vcpkg, ensure your build system is integrated with vcpkg. For example, with CMake:
+   ```sh
+   set(CMAKE_TOOLCHAIN_FILE path/to/vcpkg/scripts/buildsystems/vcpkg.cmake)
+- If you downloaded the library manually, compile the code with:
+   ```sh
+   g++ -Iinclude main.cpp Game.cpp -o number_guessing_game
 3. Compile the code:
    ```sh
    g++ -o number_guessing_game main.cpp
 4. Run the game:
    ```sh
    ./number_guessing_game
+
+##Contributing
+
+Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
+
+Happy guessing!
+
+
+
+
+
+
+
+
+
+
+
+
