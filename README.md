@@ -22,7 +22,7 @@ To run the game, you need a C++ compiler. Follow these steps:
 
 1. Clone the repository:
    ```sh
-   git clone <repository-url>
+   git clone <[repository-url](https://github.com/Vlademyanov/Number-Guessing-Game/blob/master/README.md)>
 Navigate to the project directory:
 
 cd number-guessing-game
