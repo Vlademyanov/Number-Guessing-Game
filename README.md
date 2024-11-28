@@ -18,43 +18,44 @@ Welcome to the Number Guessing Game! This is a simple console-based game where t
 
 ## Installation
 
-To run the game, you need a C++ compiler. Follow these steps:
+To run the game, you need a C++ compiler. Follow these steps fot MSVC:
 
 1. Clone the repository:
    ```sh
    git clone https://github.com/Vlademyanov/Number-Guessing-Game
 2. Navigate to the project directory:
    ```sh
-   cd number-guessing-game/Number Guessing Game
+   cd number-guessing-game
 3. Install the nlohmann/json library:
 
-- If you are using vcpkg (C++ package manager), you can install the library with the following command:
+   ```sh
+   git submodule add https://github.com/nlohmann/json.git external/nlohmann_json
+   git submodule update --init --recursive
+
+4. Create a build directory and navigate into it:
 
    ```sh
-   vcpkg install nlohmann-json
+   mkdir build
+   cd build
+
+5. Run CMake to generate Visual Studio project files:
+   ```sh
+   cmake -G "Visual Studio 17 2022" ..
    
-- If you prefer to download the library manually, you can get it from the nlohmann/json GitHub repository. Place the json.hpp file in an include directory within your project.
+6. Open the generated NumberGuessingGame.sln file in Visual Studio.
 
-4. Compile the code:
+7. Build the project in Visual Studio:
 
-- If using vcpkg, ensure your build system is integrated with vcpkg. For example, with CMake:
-   ```sh
-   set(CMAKE_TOOLCHAIN_FILE path/to/vcpkg/scripts/buildsystems/vcpkg.cmake)
-- If you downloaded the library manually, compile the code with:
-   ```sh
-   g++ -Iinclude main.cpp Game.cpp -o number_guessing_game
-5. Compile the code:
-   ```sh
-   g++ -o number_guessing_game main.cpp
-6. Run the game:
-   ```sh
-   ./number_guessing_game
+- Select the build configuration (e.g., Debug or Release).
+- Click Build -> Build Solution (or press Ctrl+Shift+B).
 
+8. Run the game:
+
+- Press Local Windows Debugger (or press F5).
 
 ## Project Roadmap
 
 This project is part of the [Number Guessing Game Roadmap](https://roadmap.sh/projects/number-guessing-game).
-
 
 ##Contributing
 
