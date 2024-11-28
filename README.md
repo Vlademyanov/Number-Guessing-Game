@@ -25,7 +25,7 @@ To run the game, you need a C++ compiler. Follow these steps:
    git clone https://github.com/Vlademyanov/Number-Guessing-Game
 2. Navigate to the project directory:
    ```sh
-   cd number-guessing-game
+   cd number-guessing-game/Number Guessing Game
 3. Install the nlohmann/json library:
 
 - If you are using vcpkg (C++ package manager), you can install the library with the following command:
