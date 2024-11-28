@@ -156,8 +156,10 @@ void Game::startGameRound() {
             else {
                 if (choice < randomNumber) str = "greater";
                 else str = "less";
-                std::cout << "\nIncorrect! The number is " << str << " than " << choice << ".\n";
+                std::cout << "\nIncorrect! The number is " << str << " than " << choice << "." << std::endl;
             }
         }
+        std::cout << "\nYou've lost! The number that I was thinking of was " << randomNumber << "!" << std::endl;
+        isGameRound = false;
     }
 }
