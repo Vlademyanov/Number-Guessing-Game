@@ -57,7 +57,7 @@ To run the game, you need a C++ compiler. Follow these steps fot MSVC:
 
 This project is part of the [Number Guessing Game Roadmap](https://roadmap.sh/projects/number-guessing-game).
 
-##Contributing
+## Contributing
 
 Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
 
